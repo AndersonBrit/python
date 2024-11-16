@@ -1,4 +1,5 @@
 import os
+import time
 
 
 def limpar_tela():
@@ -26,6 +27,9 @@ def abrir_n_vezes(func, n=1):
         func()
         limpar_tela()
 
+    print("Operação feita")
+    time.sleep(2)
+
 
 def iniciar():
 
@@ -33,43 +37,54 @@ def iniciar():
 
         limpar_tela()
 
+        print("\nEscolha uma opção:")
+        print("1 - Abrir VSCode 1 vez")
+        print("2 - Abrir VSCode 2 vezes")
+        print("3 - Abrir Google 1 vez")
+        print("4 - Abrir Google 2 vezes")
+        print("5 - Abrir VSCode e Google 1 vez")
+        print("6 - Abrir VSCode e Google 2 vezes")
+        print("7 - Sair do programa")
+
         num1 = int(input())
 
         if num1 == 1:
             abrir_n_vezes(vscode)
-            break
 
 
         elif num1 == 2:
             abrir_n_vezes(vscode, 2)
-            break
 
 
         elif num1 == 3:
             abrir_n_vezes(google)
             limpar_tela()
-            break
 
 
         elif num1 == 4:
             abrir_n_vezes(google, 2)
-            break
 
 
         elif num1 == 5:
             abrir_n_vezes(vscode)
             abrir_n_vezes(google)
             limpar_tela()
-            break
 
 
         elif num1 == 6:
             abrir_n_vezes(vscode, 2)
             abrir_n_vezes(google, 2)
+
+
+        elif num1 == 7:
+            limpar_tela()
+            print("Programa encerrado")
             break
 
 
         else:
+            print("Opção errada")
+            time.sleep(2)
             limpar_tela()
 
 
