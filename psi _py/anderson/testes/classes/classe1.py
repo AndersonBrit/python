@@ -29,7 +29,16 @@ def uso_da_classe():
     while True:
 
         limpar_tela()
-        menu = int(input("1 - Inserir dados \n2 - Ver lista dos dados \n3 - Sair\n"))
+
+        try:
+            menu = int(input("1 - Inserir dados \n2 - Ver lista dos dados \n3 - Sair\n"))
+
+        except ValueError:
+
+            limpar_tela()
+            print("Insira um valor valido")
+            continuar() 
+            continue
 
         if menu == 1:
 
