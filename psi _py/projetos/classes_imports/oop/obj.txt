@@ -1,0 +1,12 @@
+	Equipa - cova 
+
+	 Jogadores:
+
+Nome - silva
+Idade - 17
+Posicao - ala
+
+Nome - anderson
+Idade - 16
+Posicao - central
+
