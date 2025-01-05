@@ -1,1 +1,0 @@
-Programa com 3 ficheiros base, onde o 1º ficheiro "classe_atleta.py" tem a primeira classe "Atleta" onde pede as informações de um jogador e o 2º ficheiro "classe_equia.py" importa a classe do 1º ficheiro, e usa a classe para colocar em uma equipa e o 3º ficheiro "obj.py" usa as 2 classes do 1º e do 2º ficheiro.
